@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="music">
+        <div class="container box">
+            <div class="music">
+                <div class="music-player">
+                    <div class="header">
+                        <i class="fa fa-music"></i>
+                        <h2>Now Playing</h2>
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="details">
+                        <img class="track-image" src="./images/img1.jpg" alt="">
+                        <p class="title">Song Title</p>
+                        <p class="artist">Artist Name</p>
+                    </div>
+                    <div class="controls">
+                        <div class="song-timer">
+                            <span class="current-time">00:00</span>
+                            <span class="duration-time">00:00</span>
+                        </div>
+                        <div class="duration">
+                            <input type="range" class="duration-slider" min="0" max="100" value="0">
+                        </div>
+                        <div class="buttons">
+                            <button class="prev">
+                                <i class="fa fa-step-backward"></i>
+                            </button>
+                            <button class="play">
+                                <i class="fa fa-play"></i>
+                            </button>
+                            <button class="next">
+                                <i class="fa fa-step-forward"></i>
+                            </button>
+                        </div>
+                        <button class="play-all">
+                            Play All <i class="fa fa-music"></i>
+                        </button>
+                        <div class="volume">
+                            <p id="show-volume">50</p>
+                            <i class="fa fa-volume-up" id="volume-icon"></i>
+                            <input type="range" id="volume" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+                <div class="music-playlist"> 
+                    <div class="header playlist-header">
+                        <i class="fa fa-music"></i>
+                        <h2>Playlist</h2>
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="playlist-div">
+                      <!-- <div class="playlist">
+                            <span class="song-index">1.</span>
+                            <p class="single.song">Song one</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
